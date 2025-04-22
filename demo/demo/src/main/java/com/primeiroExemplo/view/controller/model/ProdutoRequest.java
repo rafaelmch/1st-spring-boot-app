@@ -1,16 +1,9 @@
-package com.primeiroExemplo.model;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Entity;
+package com.primeiroExemplo.view.controller.model;
 
-@Entity
-public class Produto {
+public class ProdutoRequest {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // auto incrementar
-
-    private Integer id;
+    // não precisamos de um id aqui, porque ele não é necessário nos requests
+    // private Integer id;
 
     private String nome;
 
@@ -22,6 +15,7 @@ public class Produto {
 
     // GETTERS AND SETTERS
 
+    /*
     public Integer getId() {
         return id;
     }
@@ -29,6 +23,7 @@ public class Produto {
     public void setId(Integer id) {
         this.id = id;
     }
+    */
 
     public String getNome() {
         return nome;
@@ -61,4 +56,5 @@ public class Produto {
     public void setObservacao(String observacao) {
         this.observacao = observacao;
     }
+
 }

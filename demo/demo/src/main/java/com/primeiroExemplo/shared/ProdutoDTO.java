@@ -1,14 +1,6 @@
-package com.primeiroExemplo.model;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Entity;
+package com.primeiroExemplo.shared;
 
-@Entity
-public class Produto {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // auto incrementar
+public class ProdutoDTO {
 
     private Integer id;
 
@@ -61,4 +53,5 @@ public class Produto {
     public void setObservacao(String observacao) {
         this.observacao = observacao;
     }
+
 }
